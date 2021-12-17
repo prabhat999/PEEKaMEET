@@ -3,7 +3,7 @@
   height: 500px;
   padding: 0;
   border: 2px solid black;
-  margin-bottom: 85px;
+  margin: auto;
 }
 .addNoteHeading {
   justify-content: center;
@@ -63,4 +63,8 @@
 }
 #cncl:hover {
   background-color: rgb(218, 218, 218);
+}
+.create-note-container {
+  height: 87vh;
+  display: flex;
 }

@@ -127,7 +127,7 @@ function SignInBody() {
                   Remember Me
                 </label>
               </div>
-              <a id="link" href="abc.com">
+              <a id="link" href="https://peek-a-meet.herokuapp.com/">
                 Forgot Password
               </a>
             </div>
@@ -135,7 +135,12 @@ function SignInBody() {
         </form>
         <div className="donthaveaccnt">
           <span>Don't have an account? </span>
-          <a id="signup" href="abc.com">
+          <a
+            id="signup"
+            href="https://peek-a-meet.herokuapp.com/
+
+"
+          >
             Sign Up
           </a>
         </div>

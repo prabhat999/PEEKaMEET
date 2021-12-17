@@ -44,7 +44,7 @@ function NotesList() {
           next={fetchMoreData}
           hasMore={state.hasMore}
           loader={<h4>Loading...</h4>}
-          endMessage={<h4>You have seen it all</h4>}
+          endMessage={<h4 className="container">You have seen it all</h4>}
         >
           {state.items.map((note1) => {
             return (
