@@ -1,3 +1,8 @@
+
+##Description
+
+This is a project made under the guidance of Unthinkable Solutions.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
