@@ -1,0 +1,66 @@
+.addNoteMain {
+  background-color: white;
+  height: 500px;
+  padding: 0;
+  border: 2px solid black;
+  margin-bottom: 85px;
+}
+.addNoteHeading {
+  justify-content: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+#notetext {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #152d4e;
+}
+.addNoteDP {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.namediv {
+  margin-top: 20px;
+  height: 50px;
+  padding-left: 20px;
+  align-items: center;
+  display: flex;
+}
+.name {
+  color: #152d4e;
+  font-weight: bold;
+  font-size: 20px;
+}
+.inpt {
+  width: 400px;
+  height: 60px;
+  padding: 10px;
+}
+.notes {
+  width: 1035px;
+  height: 150px;
+}
+.notesdiv {
+  margin-top: 20px;
+}
+.actionbar {
+  margin-top: 60px;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+}
+#cncl {
+  background-color: white;
+  color: #9ea0a3;
+}
+#save {
+  background-color: #09a04f;
+  color: white;
+}
+#cncl:hover {
+  background-color: rgb(218, 218, 218);
+}

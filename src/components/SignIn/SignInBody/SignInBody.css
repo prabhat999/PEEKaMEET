@@ -1,0 +1,104 @@
+.signinbody_main {
+  height: 78vh;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 14px 4px rgba(135, 135, 135, 0.37);
+  margin-bottom: 32px;
+}
+
+#banner {
+  width: 559px;
+  height: 468px;
+  object-fit: contain;
+}
+.signinbody_text_start {
+  font-size: 24px;
+  font-weight: bold;
+}
+.signinbody_text {
+  font-size: 18px;
+  color: #152d4e;
+}
+.badges {
+  margin: 5px;
+  padding: 6px 14px 7px;
+  border-radius: 15px;
+}
+
+#freelancer {
+  color: #f17c2b;
+  font-size: 13px;
+  background-color: rgba(241, 124, 43, 0.18);
+}
+#jobseeker {
+  color: #96368f;
+  font-size: 13px;
+  background-color: #f7d3f4;
+}
+#enter {
+  color: #1a9691;
+  font-size: 13px;
+  background-color: #aaeeec;
+}
+#mom {
+  color: #e63183;
+  font-size: 13px;
+  background-color: #fad8e7;
+}
+#intern {
+  color: #0080af;
+  font-size: 13px;
+  background-color: #beeeff;
+}
+#envviro {
+  color: #e7212c;
+  font-size: 13px;
+  background-color: rgba(231, 33, 44, 0.18);
+}
+#badgesgroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
+}
+.description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #152d4e;
+  font-weight: 440;
+}
+
+.main-color {
+  background-color: #09a04f;
+}
+
+.custom-label {
+  margin: 0 400px 6px 0;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9ea0a3;
+}
+
+.xyz {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: black;
+}
+.donthaveaccnt {
+  text-align: center;
+}
+#signup {
+  color: rgb(9, 9, 66);
+  font-weight: bold;
+}
+.password-error {
+  margin-top: 13px;
+  color: red;
+}

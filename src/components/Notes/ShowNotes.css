@@ -1,0 +1,19 @@
+.addnotediv {
+  height: 35px;
+  text-align: center;
+
+  margin-top: 15px;
+}
+.addnote {
+  border: none;
+  background-color: white;
+  color: #09a04f;
+  font-size: 20px;
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  color: orange;
+  background-color: rgb(252, 235, 203);
+  margin-top: 30px;
+}

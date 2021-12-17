@@ -1,0 +1,27 @@
+.profileheader_main {
+  height: 50px;
+
+  margin-bottom: 16px;
+  color: white;
+  padding: 0;
+}
+.profilelogo {
+  padding-left: 50px;
+}
+.profileheader-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.profileheader-list li {
+  margin: 0 16px 0 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+#home {
+  border-bottom: 2px solid white;
+}
+.signout-btn {
+  margin-right: 25px;
+}

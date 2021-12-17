@@ -1,0 +1,68 @@
+.profilebodymain {
+  background-color: white;
+  align-items: center;
+  height: 1190px;
+}
+.profilebodymaincontent {
+  height: 1190px;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #09a04f;
+}
+.profilebodymaincontentdisplay {
+  background-color: #09a04f;
+  height: 100px;
+  padding-left: 43%;
+  padding-top: 3%;
+  margin-top: 30px;
+}
+#dp {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.info {
+  color: #152d4e;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+#name {
+  font-weight: bold;
+}
+#ceo {
+  padding-left: 40px;
+}
+#brands {
+  padding-left: 12px;
+}
+.btnarea {
+  margin-top: 165px;
+  padding: 10px;
+}
+.msg {
+  background-color: #09a04f;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  border-color: none;
+}
+.togglebar {
+  padding-left: 6px;
+}
+.togglebtns {
+  color: #152d4e;
+  border: none;
+  background-color: white;
+
+  padding: 3px;
+  border-bottom: 2px solid #09a04f;
+}
+.togglebtns:hover {
+  background-color: #09a04f;
+  color: white;
+}
+.pqrs {
+  display: flex;
+  justify-content: space-evenly;
+}
