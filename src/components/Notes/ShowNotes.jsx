@@ -19,7 +19,7 @@ function ShowNotes() {
     <>
       <div className="addnotediv">
         <button onClick={addNoteHandler} className="addnote">
-          <i class="fas fa-edit"></i>
+          <i className="fas fa-edit"></i>
           Add Notes
         </button>
       </div>

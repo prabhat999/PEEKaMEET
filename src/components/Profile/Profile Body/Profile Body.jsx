@@ -32,11 +32,11 @@ function ProfileBody() {
         <div className="btnarea row">
           <div className="col pqrs">
             <button className="msg">
-              <i class="fas fa-comments"></i>
+              <i className="fas fa-comments"></i>
               Message
             </button>
             <button className="msg">
-              <i class="fas fa-user-friends"></i>
+              <i className="fas fa-user-friends"></i>
               Save Contacts
             </button>
           </div>

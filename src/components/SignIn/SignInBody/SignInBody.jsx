@@ -22,14 +22,12 @@ function SignInBody() {
       setinitialState({ ...initialState, status: false });
     } else if (
       !(
-        e.target.email.value == "bhagyashree.srivastava@daffodilsw.com" &&
-        e.target.password.value == "Hrhk@1234"
+        e.target.email.value === "bhagyashree.srivastava@daffodilsw.com" &&
+        e.target.password.value === "Hrhk@1234"
       )
     ) {
       setinitialState({ ...initialState, status1: false });
     } else {
-      console.log("we can go further");
-
       <username.Provider value={e.target.email.value}>
         <password.Provider value={e.target.password.value}>
           {navigate("/profile")};
@@ -44,9 +42,9 @@ function SignInBody() {
         <img id="banner" src={image} alt="" />
       </div>
       <div className="col-6">
-        <div class="signinbody_text">
-          <span class="signinbody_text_start">PEEKaMEET</span> lets you network
-          more effectively to achieve your business and career goals
+        <div className="signinbody_text">
+          <span className="signinbody_text_start">PEEKaMEET</span> lets you
+          network more effectively to achieve your business and career goals
         </div>
         <div id="badgesgroup">
           <span id="freelancer" className="badges">
@@ -73,20 +71,26 @@ function SignInBody() {
           <span>Build and manage your network with PEEKaMEET</span>
         </div>
         <form onSubmit={formSubmitHandler}>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label custom-label">
+          <div className="mb-3">
+            <label
+              htmlFor="exampleInputEmail1"
+              className="form-label custom-label"
+            >
               Email
             </label>
             <input
               type="email"
               name="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label custom-label">
+          <div className="mb-3">
+            <label
+              htmlFor="exampleInputPassword1"
+              className="form-label custom-label"
+            >
               Password
             </label>
             <input
@@ -119,7 +123,7 @@ function SignInBody() {
             />
             <div className="xyz">
               <div>
-                <label className="form-check-label" for="exampleCheck1">
+                <label className="form-check-label" htmlFor="exampleCheck1">
                   Remember Me
                 </label>
               </div>

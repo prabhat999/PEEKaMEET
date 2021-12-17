@@ -48,27 +48,25 @@ function NotesList() {
         >
           {state.items.map((note1) => {
             return (
-              <>
-                <div className="container fullnote">
-                  <div className="container threedots">
-                    {<Menu1 id={note1.id} />}
-                  </div>
-                  <p onClick={readMoreHandler}>
-                    {readMore ? note1.text.slice(0, 300) : note1.text}
-                    <p className="moreless">
-                      {readMore
-                        ? note1.text.length > 300
-                          ? "More"
-                          : ""
-                        : "Less"}
-                    </p>
-                  </p>
-                  <div className="text-muted datetime">
-                    <span>{note1.date}</span>
-                    <span>{note1.time}</span>
-                  </div>
+              <div className="container fullnote" key={note1.id}>
+                <div className="container threedots">
+                  {<Menu1 id={note1.id} />}
                 </div>
-              </>
+                <span onClick={readMoreHandler}>
+                  {readMore ? note1.text.slice(0, 300) : note1.text}
+                  <p className="moreless">
+                    {readMore
+                      ? note1.text.length > 300
+                        ? "More"
+                        : ""
+                      : "Less"}
+                  </p>
+                </span>
+                <div className="text-muted datetime">
+                  <span>{note1.date}</span>
+                  <span>{note1.time}</span>
+                </div>
+              </div>
             );
           })}
         </InfiniteScroll>

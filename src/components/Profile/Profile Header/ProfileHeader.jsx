@@ -18,34 +18,34 @@ function ProfileHeader() {
           <span>PEEKaMEET</span>
           <ul className="profileheader-list">
             <li>
-              <i class="fas fa-home"></i>
+              <i className="fas fa-home"></i>
             </li>
 
             <li id="home">Home</li>
 
             <li>
-              <i class="fas fa-user-friends"></i>
+              <i className="fas fa-user-friends"></i>
             </li>
             <li>Contacts</li>
             <li>
-              <i class="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
             </li>
             <li>Messages</li>
             <li>
-              <i class="fas fa-qrcode"></i>
+              <i className="fas fa-qrcode"></i>
             </li>
             <li>Scan</li>
             <li>
-              <i class="fas fa-cogs"></i>
+              <i className="fas fa-cogs"></i>
             </li>
             <li>The Movement</li>
             <li>
-              <i class="fas fa-bell"></i>
+              <i className="fas fa-bell"></i>
             </li>
             <li>Notifications</li>
 
             <li>
-              <i class="fas fa-align-justify"></i>
+              <i className="fas fa-align-justify"></i>
             </li>
           </ul>
           <button

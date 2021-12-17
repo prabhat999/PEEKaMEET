@@ -9,10 +9,10 @@ function Footer() {
       </div>
       <div className="col d-flex align-items-center icons">
         <span className="text-muted">Follow Us:</span>
-        <i class="fab fa-instagram fa-2x"></i>
-        <i class="fab fa-youtube fa-2x"></i>
-        <i class="fab fa-facebook-square fa-2x"></i>
-        <i class="fab fa-twitter fa-2x"></i>
+        <i className="fab fa-instagram fa-2x"></i>
+        <i className="fab fa-youtube fa-2x"></i>
+        <i className="fab fa-facebook-square fa-2x"></i>
+        <i className="fab fa-twitter fa-2x"></i>
       </div>
       <div className="col-6">
         <ul className="footer-list text-muted">

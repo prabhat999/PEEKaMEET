@@ -14,9 +14,7 @@ function CreateNote() {
   const params = useParams();
   const availablenote = useSelector((state) => state.Notes.initials);
   let initialnote = params["id"]
-    ? availablenote.find((note) => {
-        if (note.id === params["id"]) return note;
-      })
+    ? availablenote.find((note) => note.id === params["id"])
     : {
         id: uuidv1(),
         date: "",
@@ -62,7 +60,7 @@ function CreateNote() {
       <ProfileHeader />
       <div className="container addNoteMain">
         <div className="addNoteHeading">
-          <i class="fas fa-chevron-left"></i>
+          <i className="fas fa-chevron-left"></i>
           <span id="notetext">Add Note</span>
         </div>
         <div className="namediv">
