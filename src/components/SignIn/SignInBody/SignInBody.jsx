@@ -15,21 +15,40 @@ function SignInBody() {
     pass: "",
     status: true,
     status1: true,
+    status3: true,
+    emailempty: true,
+    passempty: true,
   });
+  const emailHandler = (e) => {
+    setinitialState({
+      ...initialState,
+      mail: e.target.value,
+      emailempty: false,
+    });
+  };
+  const passwordHandler = (e) => {
+    setinitialState({
+      ...initialState,
+      pass: e.target.value,
+      passempty: false,
+    });
+  };
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    if (!reg.test(e.target.password.value)) {
+    if (initialState.emailempty || initialState.passempty) {
+      setinitialState({ ...initialState, status3: false });
+    } else if (!reg.test(initialState.pass)) {
       setinitialState({ ...initialState, status: false });
     } else if (
       !(
-        e.target.email.value === "bhagyashree.srivastava@daffodilsw.com" &&
-        e.target.password.value === "Hrhk@1234"
+        initialState.mail === "bhagyashree.srivastava@daffodilsw.com" &&
+        initialState.pass === "Hrhk@1234"
       )
     ) {
       setinitialState({ ...initialState, status1: false });
     } else {
-      <username.Provider value={e.target.email.value}>
-        <password.Provider value={e.target.password.value}>
+      <username.Provider value={initialState.mail}>
+        <password.Provider value={initialState.pass}>
           {navigate("/profile")};
         </password.Provider>
       </username.Provider>;
@@ -70,7 +89,7 @@ function SignInBody() {
         <div className="description">
           <span>Build and manage your network with PEEKaMEET</span>
         </div>
-        <form onSubmit={formSubmitHandler}>
+        <form onSubmit={(e) => formSubmitHandler(e)}>
           <div className="mb-3">
             <label
               htmlFor="exampleInputEmail1"
@@ -81,9 +100,12 @@ function SignInBody() {
             <input
               type="email"
               name="email"
+              onChange={emailHandler}
+              value={initialState.mail}
               className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
+              placeholder="Email"
             />
           </div>
           <div className="mb-3">
@@ -94,10 +116,13 @@ function SignInBody() {
               Password
             </label>
             <input
+              onChange={passwordHandler}
               name="password"
               type="password"
               className="form-control"
               id="exampleInputPassword1"
+              value={initialState.pass}
+              placeholder="Password"
             />
             {initialState.status ? (
               ""
@@ -113,6 +138,13 @@ function SignInBody() {
             ""
           ) : (
             <div className="password-error">*Email or Password incorrect</div>
+          )}
+          {initialState.status3 ? (
+            ""
+          ) : (
+            <div className="password-error">
+              *Email or Password can't be left empty
+            </div>
           )}
           <div className="mb-3 form-check mt-3">
             <input
